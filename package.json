@@ -4,10 +4,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web"
+    "android": "npx expo run:android",
+    "start": "npx expo start --dev-client",
+    "start:tunnel": "npx expo start --tunnel --dev-client",
+    "start:lan": "npx expo start --lan --dev-client",
+    "dev:stable": "npx expo start --dev-client",
+    "dev:remote": "npx expo start --tunnel --dev-client --clear",
+    "web": "npx expo start --web",
+    "run:web": "npx expo run:web"
   },
   "dependencies": {
     "expo": "~54.0.1",
@@ -15,6 +19,5 @@
     "react": "19.1.0",
     "react-native": "0.81.4"
   },
-  "private": true,
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "private": true
 }
